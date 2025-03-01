@@ -1,1 +1,3 @@
-# applied-concurrency-go
+# Applied concurrency in Go
+
+
