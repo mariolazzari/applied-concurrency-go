@@ -28,3 +28,18 @@ It is a non deterministic way of achieving multiple tasks.
 - All the types in sync package must be passed as pointers
 
 [Sync](https://pkg.go.dev/sync)
+
+### Race conditions
+
+Use -race flag in order to detect race conditions.
+
+### sync.Map
+
+- safe for go routines
+- performance overhead
+
+### sync.Mutex
+
+- initialized unlocled
+- Lock
+- Unlock
