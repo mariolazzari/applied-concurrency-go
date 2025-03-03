@@ -43,3 +43,36 @@ Use -race flag in order to detect race conditions.
 - initialized unlocled
 - Lock
 - Unlock
+
+## Channels
+
+- No need to share memory
+- Channel is a pass-through
+- chan reserved keyword
+- <-
+- Associated to a type
+- Zero value nil
+- c := make(chan T)
+- Sending data with a channel: ch <- data
+- Receving data with a channel: data := <- ch
+- Both operations are blocking
+- Unbuffered channel: by default does not store value and need both sender and receaver
+- Buffered channel: stores value for later use
+
+### Channels direction
+
+- Bidirectional: chan T
+- Send only: chan <- T
+- Receive only: <- chan T
+- Bidirectional implicity cast to uni
+
+### Close channel
+
+- No more values will be sent after closing 
+- close(ch)
+
+### Select
+
+- wait for multiple channel operations
+- blocks until one operation is ready
+- similar to switch
